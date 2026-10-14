@@ -23,7 +23,7 @@ export class ClosingManager
             if(action.active)
             {
                 // Whispers flag select => Close
-                if(this.game.world.whispers?.menu.inputFlag.isOpen)
+                if(this.game.world.whispers?.menu?.inputFlag?.isOpen)
                     this.game.world.whispers.menu.inputFlag.close()
 
                 // Circuit flag select => Close

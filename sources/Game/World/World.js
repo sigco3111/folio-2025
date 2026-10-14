@@ -81,7 +81,7 @@ export class World
         }
         else if(step === 2)
         {
-            this.whispers = new Whispers()
+            this.whispers = null // Server-only feature omitted in Korean static edition
         }
     }
 
