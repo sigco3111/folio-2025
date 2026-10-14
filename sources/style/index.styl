@@ -22,3 +22,22 @@ body, button, input, .title, .label, .text
     font-family 'Noto Sans KR', sans-serif !important
 [data-name="whispers"], .whispers-preview, .whispers-content, .js-server, .js-post-whisper
     display none !important
+
+.ko-start-hint
+    display none
+    position fixed
+    z-index 15
+    top 20px
+    left 20px
+    padding 12px 16px
+    border-radius 8px
+    background rgba(20, 15, 30, .8)
+    color white
+    font-size 14px
+    line-height 1.7
+    pointer-events none
+html.input-filter-intro .ko-start-hint
+    display block
+.ko-edition
+    font-size 14px
+    opacity .75
