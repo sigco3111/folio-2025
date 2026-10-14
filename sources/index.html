@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruno's</title>
+    <title>Bruno의 세계</title>
 
-    <meta name="description" content="Bruno Simon's creative portfolio">
+    <meta name="description" content="Bruno Simon 원작 포트폴리오의 한국어 번역판">
 
     <meta itemprop="name" content="Bruno Simon">
-    <meta itemprop="description" content="Bruno Simon's creative portfolio">
-    <meta itemprop="image" content="https://bruno-simon.com/social/share-image.png?cb=a">
+    <meta itemprop="description" content="Bruno Simon 원작 포트폴리오의 한국어 번역판">
+    <meta itemprop="image" content="./social/share-image.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bruno Simon">
-    <meta name="twitter:description" content="Bruno Simon's creative portfolio">
-    <meta name="twitter:image" content="https://bruno-simon.com/social/share-image.png?cb=a">
+    <meta name="twitter:description" content="Bruno Simon 원작 포트폴리오의 한국어 번역판">
+    <meta name="twitter:image" content="./social/share-image.png">
 
     <meta property="og:site_name" content="Three.js Journey">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bruno-simon.com/">
+    
     <meta property="og:title" content="Bruno Simon">
-    <meta property="og:description" content="Bruno Simon's creative portfolio">
-    <meta property="og:image" content="https://bruno-simon.com/social/share-image.png?cb=a">
+    <meta property="og:description" content="Bruno Simon 원작 포트폴리오의 한국어 번역판">
+    <meta property="og:image" content="./social/share-image.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,27 +29,18 @@
     
     <link rel="stylesheet" href="./style/index.styl">
 
-    <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" loading="lazy" />
-    <link rel="shortcut icon" href="/favicons/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="./favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicons/favicon.svg" loading="lazy" />
+    <link rel="shortcut icon" href="./favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Bruno's" />
-    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link rel="manifest" href="./favicons/site.webmanifest" />
 
-    <link rel="preload" href="/respawns/respawnsReferences-compressed.glb" as="fetch" crossorigin>
-    <link rel="preload" href="/behindTheScene/stars.ktx" as="fetch" crossorigin>
-    <link rel="preload" href="/intro/sound.ktx" as="fetch" crossorigin>
-    <link rel="preload" href="/palette.ktx" as="fetch" crossorigin>
-    
-    <!-- Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JMSN30BQ5J"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', '%VITE_ANALYTICS_TAG%');
-    </script>
+    <link rel="preload" href="./respawns/respawnsReferences-compressed.glb" as="fetch" crossorigin>
+    <link rel="preload" href="./behindTheScene/stars.ktx" as="fetch" crossorigin>
+    <link rel="preload" href="./intro/sound.ktx" as="fetch" crossorigin>
+    <link rel="preload" href="./palette.ktx" as="fetch" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -67,8 +58,8 @@
         <div class="js-touch-buttons touch-buttons">
             <div class="js-overlay overlay"></div>
             <div class="list">
-                <button data-name="interact" class="js-button interact">Interact</button>
-                <button data-name="unstuck" class="js-button unstuck">Unstuck</button>
+                <button data-name="interact" class="js-button interact">상호작용</button>
+                <button data-name="unstuck" class="js-button unstuck">탈출</button>
                 <button data-name="previous" class="js-button previous"></button>
                 <button data-name="next" class="js-button next"></button>
                 <button data-name="open" class="js-button open"></button>
@@ -210,7 +201,7 @@
                         <!-- Whispers -->
                         <div class="js-preview preview whispers-preview">
                             <img class="background" src="ui/previews/whispers.webp" loading="lazy" draggable="false">
-                            <div class="js-preview-message message title"> <span class="js-text text" contenteditable="">Your message here</span><div class="js-flag flag"></div> </div>
+                            <div class="js-preview-message message title"> <span class="js-text text" contenteditable="">서버 기능 비활성화</span><div class="js-flag flag"></div> </div>
                         </div>
 
                         <!-- Behind the scene -->
@@ -224,84 +215,68 @@
                         <!-- Intro -->
                         <div class="js-content content home-content">
                             <div class="content-inner">
-                                <div class="title">Bruno's Home</div>
-                                <p class="text">Welcome!</p>
-                                <p class="text">My name is <strong>Bruno Simon</strong>, and I'm a <strong>creative developer</strong> (mostly for the web).</p>
-                                <p class="text">This is my portfolio. Please drive around to learn more about me and discover the many secrets of this world.</p>
-                                <p class="text">And don't break anything!</p>
+                                <div class="title">Bruno의 집</div>
+                                <p class="text">환영합니다!</p>
+                                <p class="text">제 이름은<strong>Bruno Simon</strong>이며, 저는<strong>크리에이티브 개발자</strong>(주로 웹을 만듭니다).</p>
+                                <p class="text">이곳은 제 포트폴리오입니다. 자동차를 타고 저에 대해 알아보고 세계 곳곳에 숨겨진 비밀을 찾아보세요.</p>
+                                <p class="text">아무것도 망가뜨리지 말아 주세요!</p>
                             </div>
                         </div>
 
                         <!-- Options -->
                         <div class="js-content content options-content">
                             <div class="content-inner">
-                                <div class="title">Options</div>
+                                <div class="title">설정</div>
                                 <table class="options">
                                     <tbody>
                                         <tr>
-                                            <td>
-                                                Audio 
-                                            </td>
+                                            <td>소리</td>
                                             <td>
                                                 <button class="js-audio-toggle audio-toggle button is-small has-tooltip">
-                                                    <div class="tooltip">Toggles sound</div>
+                                                    <div class="tooltip">소리 켜기 / 끄기</div>
                                                     <img class="icon icon-audio audio-on" src="ui/audio/audioOn.svg" loading="lazy">
                                                     <img class="icon icon-audio audio-off" src="ui/audio/audioOff.svg" loading="lazy">
                                                 </button>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                Quality 
-                                            </td>
+                                            <td>화질</td>
                                             <td>
                                                 <button class="js-quality-toggle quality-toggle button is-small has-tooltip">
-                                                    <div class="tooltip">Toggles some effects</div>
-                                                    <span>Low</span>
+                                                    <div class="tooltip">일부 그래픽 효과 변경</div>
+                                                    <span>낮음</span>
                                                 </button>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                I'm stuck!
-                                            </td>
+                                            <td>끼었어요!</td>
                                             <td>
                                                 <button class="js-respawn button is-small has-tooltip">
-                                                    <div class="tooltip">Teleports you to the closest respawn</div>
-                                                    Respawn
-                                                </button>
+                                                    <div class="tooltip">가장 가까운 출발 지점으로 이동</div>다시 출발</button>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                Reset
-                                            </td>
+                                            <td>초기화</td>
                                             <td>
                                                 <button class="js-reset button is-small has-tooltip">
-                                                    <div class="tooltip">Resets every object</div>
-                                                    Reset
-                                                </button>
+                                                    <div class="tooltip">모든 물체 초기화</div>초기화</button>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                Renderer
-                                            </td>
+                                            <td>렌더러</td>
                                             <td>
                                                 <button class="js-renderer button is-small is-disabled is-success has-tooltip">
-                                                    <div class="js-tooltip tooltip">Best for performance</div>
+                                                    <div class="js-tooltip tooltip">최적의 성능</div>
                                                     <span>WebGPU</span>
                                                 </button>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                Server
-                                            </td>
+                                            <td>서버</td>
                                             <td>
                                                 <button class="js-server button is-small is-disabled has-tooltip">
                                                     <div class="js-tooltip tooltip"></div>
-                                                    <span>Pending</span>
+                                                    <span>비활성화</span>
                                                 </button>
                                             </td>
                                         </tr>
@@ -320,21 +295,21 @@
                                             <span class="icon-container">
                                                 <span class="icon icon-mouse-keyboard"></span>
                                             </span>
-                                            <span class="label">Mouse Keyboard</span>
+                                            <span class="label">마우스 · 키보드</span>
                                         </button>
                                         <button class="js-tabs-navigation-item tab" data-tabs-name="touch">
                                             <div class="active-background"></div>
                                             <span class="icon-container">
                                                 <span class="icon icon-touch"></span>
                                             </span>
-                                            <span class="label">Mobile Tablet</span>
+                                            <span class="label">모바일 · 태블릿</span>
                                         </button>
                                         <button class="js-tabs-navigation-item tab" data-tabs-name="gamepad">
                                             <div class="active-background"></div>
                                             <span class="icon-container">
                                                 <span class="icon icon-gamepad"></span>
                                             </span>
-                                            <span class="label">Gamepad</span>
+                                            <span class="label">게임패드</span>
                                         </button>
                                     </div>
                                     <div class="js-tabs-content text text-small tabs-content">
@@ -345,52 +320,52 @@
                                                 <table>
                                                     <tbody>
                                                         <tr>
-                                                            <td><span class="key">WASD</span> or <span class="key">ARROWS</span></td>
-                                                            <td>Move around</td>
+                                                            <td><span class="key">WASD</span>또는<span class="key">방향키</span></td>
+                                                            <td>이동</td>
                                                         </tr>
                                                         <tr>
                                                             <td><span class="key">SHIFT</span></td>
-                                                            <td>Boost</td>
+                                                            <td>가속 부스트</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><span class="key">CTRL LEFT</span> or <span class="key">B</span></td>
-                                                            <td>Brake</td>
+                                                            <td><span class="key">CTRL LEFT</span>또는<span class="key">B</span></td>
+                                                            <td>제동</td>
                                                         </tr>
                                                         <tr>
                                                             <td><span class="key">SPACE</span></td>
-                                                            <td>Jump</td>
+                                                            <td>점프</td>
                                                         </tr>
                                                         <tr>
                                                             <td><span class="key">ENTER</span></td>
-                                                            <td>Interact</td>
+                                                            <td>상호작용</td>
                                                         </tr>
                                                         <tr>
                                                             <td><span class="key">M</span></td>
-                                                            <td>Map</td>
+                                                            <td>지도</td>
                                                         </tr>
                                                         <tr>
                                                             <td><span class="key">L</span></td>
-                                                            <td>Mute</td>
+                                                            <td>음소거</td>
                                                         </tr>
                                                         <tr>
                                                             <td><span class="key">T</span></td>
-                                                            <td>Post a whisper</td>
+                                                            <td>방문자 메시지 (비활성화)</td>
                                                         </tr>
                                                         <tr>
                                                             <td><span class="key">R</span></td>
-                                                            <td>Respawn</td>
+                                                            <td>다시 출발</td>
                                                         </tr>
                                                         <tr>
                                                             <td><span class="key">NUM KEYS</span>/<span class="key">NUM PAD</span></td>
-                                                            <td>Activate hydraulics</td>
+                                                            <td>유압 서스펜션 조작</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><span class="key">LEFT CLICK (DRAG)</span></td>
-                                                            <td>Move camera</td>
+                                                            <td><span class="key">왼쪽 클릭 (드래그)</span></td>
+                                                            <td>카메라 이동</td>
                                                         </tr>
                                                         <tr>
                                                             <td><span class="key">H</span></td>
-                                                            <td>Honk</td>
+                                                            <td>경적</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -403,16 +378,16 @@
                                                 <table>
                                                     <tbody>
                                                         <tr>
-                                                            <td><span class="key">One finger</span></td>
-                                                            <td>Move the car</td>
+                                                            <td><span class="key">손가락 하나</span></td>
+                                                            <td>자동차 이동</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><span class="key">Two fingers</span></td>
-                                                            <td>Move camera / zoom</td>
+                                                            <td><span class="key">손가락 둘</span></td>
+                                                            <td>카메라 이동 / 확대</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><span class="key">Tap (on the car)</span></td>
-                                                            <td>Jump</td>
+                                                            <td><span class="key">자동차 터치</span></td>
+                                                            <td>점프</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -430,73 +405,73 @@
                                                                 <span class="is-gamepad-button is-xbox key">B</span>
                                                                 <span class="is-gamepad-button is-playstation is-icon circle"></span>
                                                             </td>
-                                                            <td>Boost</td>
+                                                            <td>가속 부스트</td>
                                                         </tr>
                                                         <tr>
                                                             <td>
                                                                 <span class="is-gamepad-button is-xbox key">Y</span>
                                                                 <span class="is-gamepad-button is-playstation is-icon triangle"></span>
                                                             </td>
-                                                            <td>Jump</td>
+                                                            <td>점프</td>
                                                         </tr>
                                                         <tr>
                                                             <td>
                                                                 <span class="is-gamepad-button is-xbox key">X</span>
                                                                 <span class="is-gamepad-button is-playstation is-icon square"></span>
                                                             </td>
-                                                            <td>Brake</td>
+                                                            <td>제동</td>
                                                         </tr>
                                                         <tr>
                                                             <td>
                                                                 <span class="is-gamepad-button is-xbox key">A</span>
                                                                 <span class="is-gamepad-button is-playstation is-icon cross"></span>
                                                             </td>
-                                                            <td>Interact / Exit</td>
+                                                            <td>상호작용 / 나가기</td>
                                                         </tr>
                                                         <tr>
                                                             <td>
                                                                 <span class="is-gamepad-button is-xbox key">LT</span>
                                                                 <span class="is-gamepad-button is-playstation key">L2</span>
                                                             </td>
-                                                            <td>Accelerate</td>
+                                                            <td>가속</td>
                                                         </tr>
                                                         <tr>
                                                             <td>
                                                                 <span class="is-gamepad-button is-xbox key">RT</span>
                                                                 <span class="is-gamepad-button is-playstation key">R2</span>
                                                             </td>
-                                                            <td>Backward accelerate</td>
+                                                            <td>후진 가속</td>
                                                         </tr>
                                                         <tr>
                                                             <td>
                                                                 <span class="is-gamepad-button is-xbox key">LB / RB</span>
                                                                 <span class="is-gamepad-button is-playstation key">L1 / R1</span>
                                                             </td>
-                                                            <td>Hydraulics</td>
+                                                            <td>유압 서스펜션</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><span class="key">Joystick Left</span></td>
-                                                            <td>Turn wheels</td>
+                                                            <td><span class="key">왼쪽 스틱</span></td>
+                                                            <td>바퀴 방향 조절</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><span class="key">Joystick Left (press)</span></td>
-                                                            <td>Honk</td>
+                                                            <td><span class="key">왼쪽 스틱 누르기</span></td>
+                                                            <td>경적</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><span class="key">Joystick Right</span></td>
-                                                            <td>Move camera</td>
+                                                            <td><span class="key">오른쪽 스틱</span></td>
+                                                            <td>카메라 이동</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><span class="key">Joystick Right (press)</span></td>
-                                                            <td>Zoom in/out</td>
+                                                            <td><span class="key">오른쪽 스틱 누르기</span></td>
+                                                            <td>확대 / 축소</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><span class="key">Select</span></td>
-                                                            <td>Reset</td>
+                                                            <td><span class="key">선택</span></td>
+                                                            <td>초기화</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><span class="key">Start</span></td>
-                                                            <td>Pause</td>
+                                                            <td><span class="key">시작</span></td>
+                                                            <td>일시 정지</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -510,51 +485,51 @@
                         <!-- Achievements -->
                         <div class="js-content content achievements-content">
                             <div class="content-inner">
-                                <div class="title">Achievements</div>
+                                <div class="title">업적</div>
                                 <div class="js-global-progress global-progress">
                                     <span class="ratio"><span class="js-current current"></span> / <span class="js-total total"></span></span>
                                     <span class="js-time time">2h 30min 15s</span>
                                 </div>
                                 <div class="rewards-container">
-                                    <div class="title">Rewards</div>
+                                    <div class="title">보상</div>
                                     <div class="rewards">
                                         <button class="js-reward reward has-tooltip" data-name="red" data-default>
-                                            <div class="js-tooltip tooltip">Unlock at <strong></strong></div>
+                                            <div class="js-tooltip tooltip">해제 조건<strong></strong></div>
                                             <img class="picture" src="ui/achievements/rewards/red.webp" loading="lazy">
                                             <div class="lock">
                                                 <img class="lock-icon" src="ui/lock.svg" loading="lazy">
                                             </div>
                                         </button>
                                         <button class="js-reward reward has-tooltip is-locked" data-name="orange">
-                                            <div class="js-tooltip tooltip">Unlock at <strong></strong></div>
+                                            <div class="js-tooltip tooltip">해제 조건<strong></strong></div>
                                             <img class="picture" src="ui/achievements/rewards/orange.webp" loading="lazy">
                                             <div class="lock">
                                                 <img class="lock-icon" src="ui/lock.svg" loading="lazy">
                                             </div>
                                         </button>
                                         <button class="js-reward reward has-tooltip is-locked" data-name="white">
-                                            <div class="js-tooltip tooltip">Unlock at <strong></strong></div>
+                                            <div class="js-tooltip tooltip">해제 조건<strong></strong></div>
                                             <img class="picture" src="ui/achievements/rewards/white.webp" loading="lazy">
                                             <div class="lock">
                                                 <img class="lock-icon" src="ui/lock.svg" loading="lazy">
                                             </div>
                                         </button>
                                         <button class="js-reward reward has-tooltip is-locked" data-name="black">
-                                            <div class="js-tooltip tooltip">Unlock at <strong></strong></div>
+                                            <div class="js-tooltip tooltip">해제 조건<strong></strong></div>
                                             <img class="picture" src="ui/achievements/rewards/black.webp" loading="lazy">
                                             <div class="lock">
                                                 <img class="lock-icon" src="ui/lock.svg" loading="lazy">
                                             </div>
                                         </button>
                                         <button class="js-reward reward has-tooltip is-locked" data-name="flames">
-                                            <div class="js-tooltip tooltip">Unlock at <strong></strong></div>
+                                            <div class="js-tooltip tooltip">해제 조건<strong></strong></div>
                                             <img class="picture" src="ui/achievements/rewards/flames.webp" loading="lazy">
                                             <div class="lock">
                                                 <img class="lock-icon" src="ui/lock.svg" loading="lazy">
                                             </div>
                                         </button>
                                         <button class="js-reward reward has-tooltip is-locked" data-name="abyssal">
-                                            <div class="js-tooltip tooltip">Unlock at <strong></strong></div>
+                                            <div class="js-tooltip tooltip">해제 조건<strong></strong></div>
                                             <img class="picture" src="ui/achievements/rewards/abyssal.webp" loading="lazy">
                                             <div class="lock">
                                                 <img class="lock-icon" src="ui/lock.svg" loading="lazy">
@@ -566,9 +541,7 @@
 
                                 <div class="horizontal-group">
                                 
-                                    <button class="js-button-reset button button-reset">
-                                        Reset achievements
-                                    </button>
+                                    <button class="js-button-reset button button-reset">업적 초기화</button>
                                     
                                 </div>
                             </div>
@@ -577,22 +550,20 @@
                         <!-- Circuit -->
                         <div class="js-content content circuit-content">
                             <div class="content-inner">
-                                <div class="title">Circuit</div>
+                                <div class="title">경주 트랙</div>
                                 
                                 <p class="offline-element text text-danger">
-                                    <img src="ui/warning.svg" loading="lazy" alt="" class="icon"> Server currently offline. Scores can't be saved.
-                                </p>
+                                    <img src="ui/warning.svg" loading="lazy" alt="" class="icon">정적 한글판에서는 기록을 서버에 저장하지 않습니다.</p>
 
                                 <div class="js-leaderboard-container leaderboard-container has-no-score">
-                                    <div class="no-score">No score yet today</div>
+                                    <div class="no-score">오늘의 기록 없음</div>
                                     <table class="js-leaderboard leaderboard online-element">
                                         <tbody>
                                         </tbody>
                                     
                                     </table>
 
-                                    <p class="online-element reset">
-                                        Resets in <span class="js-reset-time reset-time"></span>
+                                    <p class="online-element reset">초기화까지<span class="js-reset-time reset-time"></span>
                                     </p>
 
                                 </div>
@@ -602,23 +573,17 @@
                                     <button class="js-button-restart button">
                                         <svg class="icon icon-restart" width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M17 5L10 10V6C5.58172 6 2 9.58172 2 14C2 18.4183 5.58172 22 10 22C14.4183 22 18 18.4183 18 14H20C20 19.5228 15.5228 24 10 24C4.47715 24 0 19.5228 0 14C0 8.47715 4.47715 4 10 4V0L17 5Z" fill="#ffffff"/>
-                                        </svg>
-                                        Restart
-                                    </button>
+                                        </svg>다시 시작</button>
                                 
                                     <button class="js-button-end button">
                                         <svg class="icon icon-flag" class="none" width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M0.551758 1.7258C6.55166 -2.27398 11.0001 3.40978 19 1.40953L23 13.4096C15.5952 15.2611 11.6175 10.2589 6.30859 12.6762L8.44824 19.0941L6.55176 19.7269L0.551758 1.7258ZM5.26562 2.00328C4.68209 2.01685 4.07959 2.11674 3.42871 2.37242L6.16309 10.5746C7.17704 10.2014 8.1765 10.0274 9.17188 10.0043C10.8337 9.96566 12.395 10.3531 13.7764 10.7299C15.9783 11.3304 17.9741 11.9562 20.3564 11.806L17.6533 3.69664C13.9491 4.17921 11.0237 3.21654 8.72363 2.58922C7.3553 2.21603 6.29108 1.97952 5.26562 2.00328Z" fill="#ffffff"/>
-                                        </svg>
-                                        End
-                                    </button>
+                                        </svg>종료</button>
                                 
                                     <button class="js-button-controls button">
                                         <svg class="icon icon-controller" width="34" height="22" viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M24.9901 0C27.2187 0 29.1912 1.98468 30.0877 3.96582C30.9844 5.94795 33.3919 15.0915 33.9373 17.4551C34.4824 19.8185 30.7556 22.1815 26.5741 22.1816C24.3923 19.6363 22.2847 16.7432 19.8465 15H14.2235C11.7707 16.7432 9.6507 19.6363 7.4559 22.1816C3.24927 22.1816 -0.494655 19.8185 0.053558 17.4551C0.602246 15.0917 3.02451 5.94816 3.9266 3.96582C4.82847 1.98469 6.81257 0.000114396 9.05453 0H24.9901ZM8.85532 2.01074C8.38039 2.06286 7.8363 2.30078 7.27133 2.77344C6.62835 3.31144 6.08313 4.05636 5.74692 4.79492C5.3762 5.61 4.5895 8.20768 3.78403 11.1035C3.19639 13.2162 2.63705 15.345 2.28207 16.7588L2.0018 17.9072C1.9553 18.1081 1.96994 18.5603 2.69711 19.124C3.29365 19.5864 5.2646 20.0018 6.56332 20.1357C6.88401 19.7496 7.20912 19.3522 7.54086 18.9434C8.08227 18.2761 8.64694 17.5798 9.22153 16.9062C10.36 15.5716 11.6783 14.3885 13.1112 13.3701L13.6307 13H20.534L21.0555 13.373C22.4808 14.3921 23.7002 15.5757 24.8319 16.9102C25.4031 17.5837 25.9636 18.2811 26.5018 18.9482C26.83 19.3551 27.1523 19.7504 27.4696 20.1348C28.7512 20 30.7095 19.5872 31.2987 19.1279C32.0175 18.5673 32.0359 18.1133 31.9881 17.9053L31.7098 16.7559C31.3569 15.3419 30.8007 13.2132 30.2166 11.1006C29.4159 8.20421 28.6341 5.60492 28.2655 4.79004C27.9309 4.05089 27.3888 3.30754 26.7508 2.77051C26.1096 2.23085 25.4989 2 24.9901 2H9.05453L8.85532 2.01074ZM12.0096 7H14.0096V9H12.0096V11H10.0096V9H8.00961V7H10.0096V5H12.0096V7ZM24.0096 11H22.0096V9H24.0096V11ZM22.0096 9H20.0096V7H22.0096V9ZM26.0096 9H24.0096V7H26.0096V9ZM24.0096 7H22.0096V5H24.0096V7Z" fill="#ffffff"/>
-                                        </svg>
-                                        Controls
-                                    </button>
+                                        </svg>조작 방법</button>
                                     
                                 </div>
                             </div>
@@ -627,8 +592,8 @@
                         <!-- Whispers -->
                         <div class="js-content content whispers-content">
                             <div class="content-inner">
-                                <div class="title">Leave a whisper</div>
-                                <p class="text">Whispers are messages left by visitors.</p>
+                                <div class="title">방문자 메시지 (비활성화)</div>
+                                <p class="text">정적 한글판에서는 방문자 메시지를 사용하지 않습니다.</p>
                                 <p class="text text-small text-faded">
                                     - Everyone can see them<br />
                                     - New whispers remove old ones (max 30)<br />
@@ -638,8 +603,7 @@
                                     - Max 30 characters
                                 </p>
                                 <p class="offline-element text text-danger">
-                                    <img src="ui/warning.svg" loading="lazy" alt="" class="icon"> Server currently offline
-                                </p>
+                                    <img src="ui/warning.svg" loading="lazy" alt="" class="icon">서버 기능 비활성화</p>
                                 <form class="js-input-group input-group is-message" action="#">
                                     <div class="js-input-flag input-flag">
                                         <div class="js-flag-button flag-button">
@@ -657,9 +621,7 @@
                                                 <img src="ui/remove.svg" loading="lazy">
                                             </div>
                                             <input type="text" class="js-flag-search search" placeholder="Search…">
-                                            <div class="js-no-result no-result">
-                                                No result
-                                            </div>
+                                            <div class="js-no-result no-result">결과 없음</div>
                                             <div class="choices">
                                                 <div class="js-scroller scroller">
                                                     
@@ -667,7 +629,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <input class="js-input js-main-focus input-text" type="text" placeholder="Your message" maxlength="30" name="message"/>
+                                    <input class="js-input js-main-focus input-text" type="text" placeholder="서버 기능 비활성화" maxlength="30" name="message"/>
                                     <button class="submit has-icon">
                                         <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M10.984 26.0434C11.087 26.0016 11.1916 25.9584 11.2975 25.914C12.9298 25.2289 14.998 24.1857 16.3708 22.8128C16.8477 22.3359 17.1994 21.573 17.4799 20.7863C17.7749 19.9587 18.0444 18.9447 18.2905 17.831C18.7834 15.6008 19.2022 12.8805 19.541 10.26C19.5427 10.2476 19.5443 10.2352 19.5459 10.2228C19.8659 12.7209 20.2775 15.3149 20.7957 17.4944C21.063 18.6186 21.3637 19.6547 21.7037 20.5201C22.0343 21.3616 22.4398 22.1422 22.963 22.6655C24.5715 24.2739 26.4382 25.3527 27.8827 26.0268C27.9024 26.036 27.922 26.0452 27.9416 26.0542C27.8074 26.1139 27.6701 26.1761 27.5304 26.2406C26.0017 26.9468 24.0681 27.9906 22.8116 29.2618C21.4879 30.6008 20.4455 32.6674 19.7513 34.3012C19.698 34.4266 19.6465 34.5502 19.5967 34.6716C19.5466 34.5489 19.4948 34.424 19.4411 34.2972C18.7484 32.6615 17.7049 30.5918 16.3708 29.2577C15.0363 27.9233 12.966 26.8799 11.3298 26.1873C11.2129 26.1378 11.0975 26.0899 10.984 26.0434Z" stroke="#FFCECA" stroke-width="2"/>
@@ -681,47 +643,33 @@
                         <!-- Behind the scene -->
                         <div class="js-content content behindTheScene-content">
                             <div class="content-inner">
-                                <div class="title">Behind the scene</div>
-                                <p class="text">
-                                    Thank you for visiting my portfolio!
-                                    <br />If you are curious about the stack and how I built this project, here’s everything you need to know.
-                                </p>
+                                <div class="title">제작 이야기</div>
+                                <p class="text">제 포트폴리오를 방문해 주셔서 감사합니다!<br />사용한 기술과 제작 방법이 궁금하다면 아래 내용을 살펴보세요.</p>
                                 
                                 <h2 class="title">Three.js</h2>
                                 <p class="text">
-                                    <a href="https://threejs.org" target="_blank" rel="noreferrer">Three.js</a> is the library I’m using to render this 3D world.
-                                    <br />It was created by <strong>mr.doob</strong> (<a href="https://x.com/mrdoob" target="_blank" rel="noreferrer">X</a>, <a href="http://github.com/mrdoob" target="_blank" rel="noreferrer">GitHub</a>), followed by hundreds of awesome developers, one of which being Sunag (<a href="https://x.com/sea3dformat" target="_blank" rel="noreferrer">X</a>, <a href="https://github.com/sunag" target="_blank" rel="noreferrer">GitHub</a>) who added <a href="https://github.com/mrdoob/three.js/wiki/Three.js-Shading-Language" target="_blank" rel="noreferrer">TSL</a>, enabling the use of both WebGL and WebGPU, making this portfolio possible.
-                                </p>
+                                    <a href="https://threejs.org" target="_blank" rel="noreferrer">Three.js</a>는 이 3D 세계를 렌더링하는 라이브러리입니다.<br />처음 만든 사람은<strong>mr.doob</strong> (<a href="https://x.com/mrdoob" target="_blank" rel="noreferrer">X</a>, <a href="http://github.com/mrdoob" target="_blank" rel="noreferrer">GitHub</a>이며 수백 명의 개발자가 함께 개선했습니다. 그중 Sunag (<a href="https://x.com/sea3dformat" target="_blank" rel="noreferrer">X</a>, <a href="https://github.com/sunag" target="_blank" rel="noreferrer">GitHub</a>)이 추가한<a href="https://github.com/mrdoob/three.js/wiki/Three.js-Shading-Language" target="_blank" rel="noreferrer">TSL</a>덕분에 WebGL과 WebGPU를 함께 사용하여 이 포트폴리오를 만들 수 있었습니다.</p>
                                 
                                 <h2 class="title">Three.js Journey</h2>
-                                <p class="text">
-                                    If you want to learn Three.js, I got you covered with this <a href="https://threejs-journey.com" target="_blank" rel="noreferrer">huge course</a>.
-                                    <br />It contains everything you need to start building awesome stuff with Three.js (and much more).
+                                <p class="text">Three.js를 배우고 싶다면 이<a href="https://threejs-journey.com" target="_blank" rel="noreferrer">강의</a>.
+                                    <br />에서 Three.js로 작품을 만드는 데 필요한 내용을 배울 수 있습니다.</p>
+                                
+                                <h2 class="title">개발 일지</h2>
+                                <p class="text">포트폴리오 제작 초기부터 기록한 개발 일지를 제<a href="https://www.youtube.com/playlist?list=PL5nApUt6Z8sTZxEsEMd8x89OCKCAAfNL0" target="_blank" rel="noreferrer">YouTube 채널</a>.
                                 </p>
                                 
-                                <h2 class="title">Devlogs</h2>
-                                <p class="text">
-                                    I’ve been making devlogs since the very start of this portfolio and you can find them all on my <a href="https://www.youtube.com/playlist?list=PL5nApUt6Z8sTZxEsEMd8x89OCKCAAfNL0" target="_blank" rel="noreferrer">Youtube channel</a>.
-                                </p>
+                                <h2 class="title">소스 코드</h2>
+                                <p class="text">코드는<a href="https://github.com/brunosimon/folio-2025" target="_blank" rel="noreferrer">GitHub</a>에 공개되어 있으며<a href="https://choosealicense.com/licenses/mit/" target="_blank" rel="noreferrer">MIT 라이선스</a>를 따릅니다. Blender 파일도 있으니 즐겁게 살펴보세요!<br />보안상 서버 코드는 공개하지 않지만 서버 없이도 포트폴리오를 실행할 수 있습니다.</p>
                                 
-                                <h2 class="title">Source code</h2>
-                                <p class="text">
-                                    The code is available on <a href="https://github.com/brunosimon/folio-2025" target="_blank" rel="noreferrer">GitHub</a> under <a href="https://choosealicense.com/licenses/mit/" target="_blank" rel="noreferrer">MIT license</a>. Even the Blender files are there, so have fun!
-                                    <br />For security reasons, I’m not sharing the server code, but the portfolio works without it.
-                                </p>
-                                
-                                <h2 class="title">Musics</h2>
-                                <p class="text">
-                                    The music you hear was made especially for this portfolio by the awesome Kounine (<a href="https://linktr.ee/Kounine" target="_blank" rel="noreferrer">Linktree</a>).
-                                    <br />They are now under <a href="https://choosealicense.com/licenses/cc0-1.0/" target="_blank" rel="noreferrer">CC0 license</a>, meaning you can do whatever you want with them!
-                                    <br />Download them <a href="https://github.com/brunosimon/folio-2025/tree/main/static/sounds/musics" target="_blank" rel="noreferrer">here</a>.
+                                <h2 class="title">음악</h2>
+                                <p class="text">음악은 Kounine (<a href="https://linktr.ee/Kounine" target="_blank" rel="noreferrer">Linktree</a>)이 이 포트폴리오를 위해 만들었습니다.<br />음악은<a href="https://choosealicense.com/licenses/cc0-1.0/" target="_blank" rel="noreferrer">CC0 라이선스</a>로 공개되어 자유롭게 사용할 수 있습니다!<br />음악 내려받기<a href="https://github.com/brunosimon/folio-2025/tree/main/static/sounds/musics" target="_blank" rel="noreferrer">여기</a>.
                                 </p>
 
-                                <h2 class="title">Some more links</h2>
+                                <h2 class="title">관련 링크</h2>
                                 <ul class="text">
-                                    <li>Physics library ⇒ <a href="https://rapier.rs" target="_blank" rel="noreferrer">Rapier</a></li>
-                                    <li>Audio library ⇒ <a href="https://howlerjs.com" target="_blank" rel="noreferrer">Howler.js</a></li>
-                                    <li>Fonts ⇒ <a href="https://fonts.google.com/specimen/Amatic+SC" target="_blank" rel="noreferrer">Amatic SC</a> & <a href="https://fonts.google.com/specimen/Nunito?query=Nunito" target="_blank" rel="noreferrer">Nunito</a></li>
+                                    <li>물리 라이브러리 ⇒<a href="https://rapier.rs" target="_blank" rel="noreferrer">Rapier</a></li>
+                                    <li>오디오 라이브러리 ⇒<a href="https://howlerjs.com" target="_blank" rel="noreferrer">Howler.js</a></li>
+                                    <li>글꼴 ⇒<a href="https://fonts.google.com/specimen/Amatic+SC" target="_blank" rel="noreferrer">Amatic SC</a> & <a href="https://fonts.google.com/specimen/Nunito?query=Nunito" target="_blank" rel="noreferrer">Nunito</a></li>
                                 </ul>
 
                                 <p class="text text-faded text-align-right">
@@ -750,18 +698,13 @@
                             <span class="icon is-xbox">A</span>
                         </button>
 
-                        <div class="your-time">
-                            Your time
-                            <br /><span class="js-time value">00:00:000</span>
+                        <div class="your-time">주행 기록<br /><span class="js-time value">00:00:000</span>
                         </div>
 
                         <p class="offline-element text text-danger">
-                            <img src="ui/warning.svg" loading="lazy" alt="" class="icon"> Server currently offline. Scores can't be saved.
-                        </p>
+                            <img src="ui/warning.svg" loading="lazy" alt="" class="icon">정적 한글판에서는 기록을 서버에 저장하지 않습니다.</p>
 
-                        <p class="not-top-10 text">
-                            Sorry, you didn't make it to the top 10.
-                        </p>
+                        <p class="not-top-10 text">상위 10위 안에 들지 못했습니다.</p>
 
                         <div class="horizontal-group">
                         
@@ -782,9 +725,7 @@
                                             <img src="ui/remove.svg" loading="lazy">
                                         </div>
                                         <input type="text" class="js-flag-search search" placeholder="Search…">
-                                        <div class="js-no-result no-result">
-                                            No result
-                                        </div>
+                                        <div class="js-no-result no-result">결과 없음</div>
                                         <div class="choices">
                                             <div class="js-scroller scroller">
                                                 
@@ -793,21 +734,15 @@
                                     </div>
                                 </div>
                                 <input class="js-input js-main-focus input-text" type="text" placeholder="---" maxlength="3" />
-                                <button class="submit has-text">
-                                    Submit
-                                </button>
+                                <button class="submit has-text">제출</button>
                             </form>
 
-                            <div class="or">
-                                or
-                            </div>
+                            <div class="or">또는</div>
 
                             <button class="js-button-restart button">
                                 <svg class="icon icon-restart" width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M17 5L10 10V6C5.58172 6 2 9.58172 2 14C2 18.4183 5.58172 22 10 22C14.4183 22 18 18.4183 18 14H20C20 19.5228 15.5228 24 10 24C4.47715 24 0 19.5228 0 14C0 8.47715 4.47715 4 10 4V0L17 5Z" fill="#ffffff"/>
-                                </svg>
-                                Restart
-                            </button>
+                                </svg>다시 시작</button>
 
                         </div>
                     
@@ -830,27 +765,23 @@
                             <div class="item">
                                 <div class="title-container">
                                     <div class="line left"></div>
-                                    <div class="title">Public server</div>
+                                    <div class="title">공개 커뮤니티</div>
                                     <div class="line right"></div>
                                 </div>
-                                <p>Come hang out with the community<span class="optional">, show us your projects and ask us anything</span>.</p>
+                                <p>커뮤니티에 참여해<span class="optional">작품을 공유하고 질문해 보세요</span>.</p>
                                 <div class="button-container">
-                                    <a href="https://discord.com/channels/769928116701233152/1445064878384480288" target="_blank" rel="noreferrer" class="button">
-                                        Join server
-                                    </a>
+                                    <a href="https://discord.com/channels/769928116701233152/1445064878384480288" target="_blank" rel="noreferrer" class="button">커뮤니티 참여</a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="title-container">
                                     <div class="line left"></div>
-                                    <div class="title">Private messages</div>
+                                    <div class="title">개인 메시지</div>
                                     <div class="line right"></div>
                                 </div>
-                                <p>Contact me directly.<span class="optional"><br />I have to warn you, I try to answer everyone, but it might take a while.</span></p>
+                                <p>원작자에게 직접 연락할 수 있습니다.<span class="optional"><br />모든 분께 답하려 하지만 시간이 걸릴 수 있습니다.</span></p>
                                 <div class="button-container">
-                                    <a href="https://discord.com/users/202907325722263553" target="_blank" rel="noreferrer" class="button">
-                                        Start chating
-                                    </a>
+                                    <a href="https://discord.com/users/202907325722263553" target="_blank" rel="noreferrer" class="button">대화 시작</a>
                                 </div>
                             </div>
                         </div>

@@ -521,17 +521,17 @@ export class Achievements
 
             if(clickCount === 1)
             {
-                button.textContent = 'Are you sure?'
+                button.textContent = '정말 초기화할까요?'
             }
 
             else if(clickCount === 2)
             {
-                button.textContent = 'Definitely?'
+                button.textContent = '한 번 더 확인해 주세요'
             }
 
             else if(clickCount === 3)
             {
-                button.textContent = 'Done!'
+                button.textContent = '완료!'
                 clickCount = 0
                 this.reset()
             }
@@ -542,7 +542,7 @@ export class Achievements
             event.preventDefault()
             clickCount = 0
 
-            button.textContent = 'Reset achievements'
+            button.textContent = '업적 초기화'
         })
     }
 

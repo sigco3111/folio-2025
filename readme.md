@@ -1,151 +1,60 @@
-# Folio 2025
+# 🚗 Bruno Simon Folio 2025 한글판
 
-![image info](./static/social/share-image.png)
+Bruno Simon이 만든 자동차로 탐험하는 3D 포트폴리오의 한국어 번역판입니다. 귀여운 자동차를 몰고 프로젝트, 연구실, 경력, 볼링장, 경주 트랙 등 13개 구역을 둘러보며 숨겨진 업적을 찾아보세요.
 
-## Setup
+> 이 사이트는 **Bruno Simon의 작품을 번역한 포크**입니다. Bruno Simon의 이름·경력·작품·연락처는 원작자 정보로 유지하며, 포크 소유자의 포트폴리오인 것처럼 바꾸지 않습니다.
 
-Create `.env` file based on `.env.example`
+## 🎮 기본 조작
 
-Download and install [Node.js](https://nodejs.org/en/download/) then run this followed commands:
+| 키 | 기능 |
+|---|---|
+| WASD / 방향키 | 자동차 이동 |
+| Shift | 부스트 |
+| B / 왼쪽 Ctrl | 제동 |
+| Space | 점프 |
+| Enter | 상호작용 |
+| M | 지도 |
+| R | 가까운 출발점으로 복귀 |
+| L | 음소거 |
+| H | 경적 |
+| 숫자키 | 유압 서스펜션 |
+| 마우스 드래그 | 카메라 이동 |
 
-``` bash
-# Install dependencies
-npm install --force
+모바일은 터치 조작, 게임패드는 스틱과 버튼 조작을 지원합니다. 자세한 조작법은 메뉴의 **조작 방법**을 참고하세요.
 
-# Serve at localhost:1234
+## 🇰🇷 번역 범위
+
+홈 소개, 설정, 키보드·터치·게임패드 도움말, 업적 이름과 목표, 지도 구역 이름, 제작 이야기, 경주 안내, 상호작용 버튼을 한국어로 번역했습니다. Noto Sans KR 글꼴을 적용하고 원래 데이터 ID와 원작 저작권 고지는 유지했습니다. 프로젝트 고유명과 개발자 이름, URL은 원본 그대로입니다.
+
+3D 모델·KTX 이미지에 구워진 경력 설명과 간판, 일부 시작 화면 그래픽은 원본 영문입니다. 이는 코드의 UI 문자열과 다른 자산이며 이 번역판의 남은 범위입니다.
+
+## 🔌 서버 없는 정적판
+
+- 원작 서버 연결을 코드와 환경 설정 양쪽에서 차단했습니다.
+- 방문자 메시지(Whispers), 공유 순위표 및 서버 전용 업적은 제공하지 않습니다.
+- 경주 자체와 로컬 업적은 사용 가능합니다. 서버에 기록을 제출하지 않습니다.
+- 원작 Google Analytics 수집 코드를 제거했습니다.
+- 원작자 작품·커뮤니티 외부 링크는 직접 클릭할 때만 열립니다.
+
+## 🛠️ 로컬 실행
+
+Node.js 22 이상을 권장합니다.
+
+```bash
+npm ci --legacy-peer-deps
+node localize.mjs
 npm run dev
-
-# Build for production in the dist/ directory
 npm run build
 ```
 
-## Game loop
+기본 정적 환경은 서버 URL과 분석 태그를 비워 두고 압축 자산을 사용합니다. GitHub Pages는 `.github/workflows/pages.yml`에서 자동 빌드·배포합니다. Vite base는 상대 경로이며 정적 자산도 저장소 하위 경로에서 불러옵니다.
 
-#### 0
+## ⚠️ 실행 환경
 
-- Time
-- Inputs
+WebGPU가 지원되는 최신 브라우저와 GPU를 권장합니다. WebGL 대체 경로가 있지만 성능과 효과가 다를 수 있습니다. 고해상도 3D 자산이 많아 첫 로딩과 빌드에 시간이 걸립니다. 이 README는 배포 후 실제 실행 검증 상태를 별도로 기록합니다.
 
-#### 1
+## 📚 라이선스·크레딧
 
-- Player:pre-physics (Inputs)
+원작: Bruno Simon / folio-2025. 코드의 `license.md`는 MIT이며 이 문서를 기준으로 표시했습니다. 원본 package.json의 ISC 표기와 불일치가 있어 여기에는 이를 명시합니다. MIT 원문은 변경하지 않았습니다.
 
-#### 2
-
-- PhysicalVehicle:pre-physics (Player:pre-physics)
-
-#### 3
-
-- Physics
-
-#### 4
-
-- PhysicsWireframe (Physics)
-- Objects (Physics)
-
-#### 5
-
-- PhysicalVehicle:post-physics (Player:pre-physics)
-
-#### 6
-
-- Player:post-physics (Physics, PhysicalVehicle:post-physics)
-
-#### 7
-
-- View (Inputs, Player:post-physics)
-
-#### 8
-
-- Intro
-- DayCycles
-- YearCycles
-- Weather (DayCycles, YearCycles)
-- Zones (Player:post-physics)
-- VisualVehicle (PhysicalVehicle:post-physics, Inputs, Player:post-physics, View)
-
-#### 9
-
-- Wind (Weather)
-- Lighting (DayCycles, View)
-- Tornado (DayCycles, PhysicalVehicle)
-- InteractivePoints (Player:post-physics)
-- Tracks (VisualVehicle)
-
-#### 10
-
-- Area++ (View, PhysicalVehicle:post-physics, Player:post-physics, Wind)
-- Foliage (VisualVehicle, View)
-- Fog (View)
-- Reveal (DayCycles)
-- Terrain (Tracks)
-- Trails (PhysicalVehicle)
-- Floor (View)
-- Grass (View, Wind)
-- Leaves (View, PhysicalVehicle)
-- Lightnings (View, Weather)
-- RainLines (View, Weather, Reveal)
-- Snow (View, Weather, Reveal, Tracks)
-- VisualTornado (Tornado)
-- WaterSurface (Weather, View)
-- Benches (Objects)
-- Bricks (Objects)
-- ExplosiveCrates (Objects)
-- Fences (Objects)
-- Lanterns (Objects)
-- Whispers (Player)
-
-#### 13
-
-- InstancedGroup (Objects, [SpecificObjects])
-
-#### 14
-
-- Audio (View, Objects)
-- Notifications
-- Title (PhysicalVehicle:post-physics)
-
-#### 998
-
-- Rendering
-
-#### 999
-
-- Monitoring
-
-## Blender
-
-### Export
-
-- Mute the palette texture node (loaded and set in Three.js `Material` directly)
-- Use corresponding export presets
-- Don't use compression (will be done later)
-
-### Compress
-
-Run `npm run compress`
-
-Will do the following
-
-#### GLB
-
-- Traverses the `static/` folder looking for glb files (ignoring already compressed files)
-- Compresses embeded texture with `etc1s --quality 255` (lossy, GPU friendly)
-- Generates new files to preserve originals
-
-#### Texture files
-
-- Traverses the `static/` folder looking for `png|jpg` files (ignoring non-model related folders)
-- Compresses with default preset to `--encode etc1s --qlevel 255` (lossy, GPU friendly) or specific preset according to path
-- Generates new files to preserve originals
-
-#### UI files
-
-- Traverses the `static/ui.` folder looking for `png|jpg` files
-- Compresses to WebP
-
-#### Resources
-
-- https://gltf-transform.dev/cli
-- https://github.com/KhronosGroup/KTX-Software?tab=readme-ov-file
-- https://github.khronos.org/KTX-Software/ktxtools/toktx.html
+원작 음악: Kounine, CC0. Three.js, Rapier, Howler.js 및 원작 크레딧을 유지합니다. 원문 README는 `README.en.md`에서 볼 수 있습니다.

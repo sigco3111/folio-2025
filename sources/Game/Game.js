@@ -69,6 +69,8 @@ export class Game
 
     async init()
     {
+        // Load Korean glyphs before canvas text is generated.
+        await document.fonts.load('700 20px "Noto Sans KR"');
         // Setup
         this.domElement = document.querySelector('.game')
         this.canvasElement = this.domElement.querySelector('.js-canvas')

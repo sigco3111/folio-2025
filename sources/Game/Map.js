@@ -41,18 +41,18 @@ export class Map
     {
         this.locations = {}
         this.locations.items = [
-            { name: 'Achievements', respawnName: 'achievements', offset: { x: 0, y: -0.01 } },
-            { name: 'Altar', respawnName: 'altar', offset: { x: 0, y: -0.05 } },
-            { name: 'Behind<br /> the scene', respawnName: 'behindTheScene', offset: { x: 0.01, y: 0 } },
-            { name: 'Bowling', respawnName: 'bowling', offset: { x: -0.08, y: 0.03 } },
-            { name: 'Career', respawnName: 'career', offset: { x: 0, y: -0.06 } },
-            { name: 'Circuit', respawnName: 'circuit', offset: { x: -0.08, y: -0.05 } },
-            { name: 'Cookie', respawnName: 'cookie', offset: { x: -0.02, y: -0.01 } },
-            { name: 'Lab', respawnName: 'lab', offset: { x: -0.03, y: 0 } },
-            { name: 'Landing', respawnName: 'landing', offset: { x: 0.02, y: 0 } },
-            { name: 'Projects', respawnName: 'projects', offset: { x: 0, y: -0.02 } },
-            { name: 'Social', respawnName: 'social', offset: { x: -0.01, y: -0.04 } },
-            { name: 'Time Machine', respawnName: 'timeMachine', offset: { x: 0, y: 0 } },
+            { name: '업적', respawnName: 'achievements', offset: { x: 0, y: -0.01 } },
+            { name: '제단', respawnName: 'altar', offset: { x: 0, y: -0.05 } },
+            { name: '제작 이야기', respawnName: 'behindTheScene', offset: { x: 0.01, y: 0 } },
+            { name: '볼링', respawnName: 'bowling', offset: { x: -0.08, y: 0.03 } },
+            { name: '경력', respawnName: 'career', offset: { x: 0, y: -0.06 } },
+            { name: '경주 트랙', respawnName: 'circuit', offset: { x: -0.08, y: -0.05 } },
+            { name: '쿠키', respawnName: 'cookie', offset: { x: -0.02, y: -0.01 } },
+            { name: '연구실', respawnName: 'lab', offset: { x: -0.03, y: 0 } },
+            { name: '출발 지점', respawnName: 'landing', offset: { x: 0.02, y: 0 } },
+            { name: '프로젝트', respawnName: 'projects', offset: { x: 0, y: -0.02 } },
+            { name: '소셜', respawnName: 'social', offset: { x: -0.01, y: -0.04 } },
+            { name: '타임머신', respawnName: 'timeMachine', offset: { x: 0, y: 0 } },
         ]
 
         for(const item of this.locations.items)

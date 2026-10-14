@@ -5,7 +5,7 @@ export default [
         url: 'https://threejs-journey.com',
         attributes:
         {
-            role: [ 'developer', 'formater' ],
+            role: [ '개발자', '강사' ],
             with: [ 'Hervé Studio', 'Bonhomme Paris' ]
         },
         distinctions: [ 'fwa' ], // 'awwwards', 'fwa', 'cssda'
@@ -25,7 +25,7 @@ export default [
     //     attributes:
     //     {
     //         at: 'Immersive Garden',
-    //         role: 'WebGL developer',
+    //         role: 'WebGL 개발자',
     //         with: 'Rémi Tran'
     //     },
     //     distinctions: [ 'awwwards', 'cssda', 'fwa' ], // 'awwwards', 'fwa', 'cssda'
@@ -42,7 +42,7 @@ export default [
         url: 'https://anniversary.bonhommeparis.com',
         attributes:
         {
-            role: 'WebGL developer',
+            role: 'WebGL 개발자',
             with: 'Bonhomme Paris'
         },
         distinctions: [ 'awwwards', 'fwa' ],
@@ -59,7 +59,7 @@ export default [
         url: 'https://madbox.io',
         attributes:
         {
-            role: 'WebGL developer',
+            role: 'WebGL 개발자',
             at: 'Hervé Studio',
             with: 'Lei Xing'
         },
@@ -77,7 +77,7 @@ export default [
         url: 'https://www.luni.app',
         attributes:
         {
-            role: 'WebGL developer',
+            role: 'WebGL 개발자',
             at: 'Hervé Studio',
             with: 'Loïc Belaidremesal'
         },
@@ -96,7 +96,7 @@ export default [
         url: 'https://scout-omega.vercel.app',
         attributes:
         {
-            role: 'WebGL developer',
+            role: 'WebGL 개발자',
             at: 'Hervé Studio'
         },
         distinctions: [  ],
@@ -113,7 +113,7 @@ export default [
         url: 'https://prior.co.jp/discover/en',
         attributes:
         {
-            role: [ 'Front developer', 'WebGL developer' ],
+            role: [ '프런트엔드 개발자', 'WebGL 개발자' ],
             at: 'Immersive Garden'
         },
         distinctions: [ 'awwwards', 'cssda', 'fwa' ],
@@ -130,7 +130,7 @@ export default [
         url: 'https://www.orano.group/experience/innovation/en',
         attributes:
         {
-            role: [ 'Front developer', 'WebGL developer' ],
+            role: [ '프런트엔드 개발자', 'WebGL 개발자' ],
             at: 'Immersive Garden'
         },
         distinctions: [ 'awwwards', 'cssda', 'fwa' ],
@@ -147,7 +147,7 @@ export default [
         url: 'https://thenewmobileworkforce.imm-g-prod.com',
         attributes:
         {
-            role: [ 'WebGL developer' ],
+            role: [ 'WebGL 개발자' ],
             at: 'Immersive Garden',
             with: [ 'Damien Doussaud', 'Quentin Leclercq' ]
         },

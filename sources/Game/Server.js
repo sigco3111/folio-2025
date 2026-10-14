@@ -25,7 +25,7 @@ export class Server
 
     start()
     {
-        if(import.meta.env.VITE_SERVER_URL)
+        if(false) // Korean static edition: server connections disabled
         {
             // First connect attempt
             this.connect()
@@ -41,7 +41,8 @@ export class Server
 
     connect()
     {
-        this.socket = new WebSocket(import.meta.env.VITE_SERVER_URL)
+        return // Korean static edition: never connect to the original server
+        this.socket = null
         this.socket.binaryType = 'arraybuffer'
 
         this.socket.addEventListener('open', () =>

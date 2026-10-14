@@ -188,6 +188,8 @@ export class InteractivePoints
         hideCallback = null
     )
     {
+        const ko = {"Achievements": "업적", "Altar": "제단", "Behind<br /> the scene": "제작 이야기", "Bowling": "볼링", "Career": "경력", "Circuit": "경주 트랙", "Cookie": "쿠키", "Lab": "연구실", "Landing": "출발 지점", "Projects": "프로젝트", "Social": "소셜", "Time Machine": "타임머신", "Start race!": "경주 시작!", "Accept cookie": "쿠키 받기", "Restart": "다시 시작", "Bumpers": "범퍼", "Change song": "음악 변경", "Map": "지도", "Controls": "조작 방법", "Res(e)t": "초기화", "Behind the scene": "제작 이야기", "Easter event": "부활절 이벤트"};
+        text = ko[text] || text;
         const newPosition = position.clone()
         // newPosition.y = 2.25
 
@@ -213,7 +215,7 @@ export class InteractivePoints
         const textPaddingLeft = align === InteractivePoints.ALIGN_LEFT ? 60 : 12
         const textPaddingRight = align === InteractivePoints.ALIGN_LEFT ? 12 : 60
         const textOffsetVertical = 2
-        const font = `700 ${height}px "Amatic SC"`
+        const font = `700 ${height}px "Noto Sans KR"`
 
         const canvas = document.createElement('canvas')
         canvas.style.position = 'fixed'

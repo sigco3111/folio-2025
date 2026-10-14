@@ -26,7 +26,7 @@ export class Options
     {
         const element = this.element.querySelector('.js-quality-toggle')
         const text = element.querySelector('span')
-        text.textContent = this.game.quality.level === 0 ? 'High' : 'Low'
+        text.textContent = this.game.quality.level === 0 ? '높음' : '낮음'
 
         element.addEventListener('click', () =>
         {
@@ -35,7 +35,7 @@ export class Options
 
         this.game.quality.events.on('change', () =>
         {
-            text.textContent = this.game.quality.level === 0 ? 'High' : 'Low'
+            text.textContent = this.game.quality.level === 0 ? '높음' : '낮음'
         })
     }
 
@@ -73,7 +73,7 @@ export class Options
             text.textContent = 'WebGL'
 
             const tooltip = element.querySelector('.js-tooltip')
-            tooltip.innerHTML = /* html */`Your browser is <strong>not compatible</strong> with WebGPU resulting in performance loss`
+            tooltip.innerHTML = /* html */`이 브라우저는 WebGPU를 <strong>지원하지 않아</strong> 성능이 낮을 수 있습니다`
         }
     }
 
@@ -90,15 +90,15 @@ export class Options
                 element.classList.add('is-success')
                 element.classList.remove('is-danger')
                 
-                text.textContent = 'Online'
+                text.textContent = '온라인'
 
-                tooltip.innerHTML = /* html */`Enjoy the <strong>multiplayer</strong> features`
+                tooltip.innerHTML = /* html */`<strong>온라인 기능</strong> 사용 가능`
             }
             else
             {
                 element.classList.remove('is-success')
                 element.classList.add('is-danger')
-                text.textContent = 'Offline'
+                text.textContent = '비활성화'
 
                 tooltip.innerHTML = /* html */`Should be back soon`
             }
